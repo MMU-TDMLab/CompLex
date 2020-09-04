@@ -16,7 +16,7 @@ See the task website for further information: https://sites.google.com/view/lcps
 
 Currently, the trial and test data are available. The trial data comprises of 99 MWEs (29 bible, 33 biomed and 37 europarl) and 421 single word instances (143 bible, 135 biomed and 143 europarl). 
 
-The test data comprises of 1,517 MWEs (505 bible, 514 biomed and 498 europarl) and 7,662 single word instances (2,574 bible, 2,576 biomed and 2,512 europarl). The test data is compressed and encrypted using 7zip (see: https://www.7-zip.org/), which is available on windows / linux. **You will need the password to decompress the 7zip archive, which can be obtained by registering for the shared task.**
+The training data comprises of 1,517 MWEs (505 bible, 514 biomed and 498 europarl) and 7,662 single word instances (2,574 bible, 2,576 biomed and 2,512 europarl). The training data is compressed and encrypted using 7zip (see: https://www.7-zip.org/), which is available on windows / linux. **You will need the password to decompress the 7zip archive, which can be obtained by registering for the shared task.**
 
 The data is arranged by token and sorted by complexity (i.e., instances with the same token appear together in groups, and the groups are sorted by the complexity of the lowest scored item). Tokens that appear in one partition will not appear in another partition. We have deliberately included more tha oe instance of a token where possible to identify places where the context affects the complexity of a word.  Consider, for example, the following two sentences from the trial data:
 
