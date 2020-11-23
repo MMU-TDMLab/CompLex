@@ -28,3 +28,32 @@ When *table* is used as a noun  in the first sentence (albeit in an abstract sen
 The data comes from three sources: biblical text, biomedical articles and proceedings of the European Parliament. These sources were selected as they contain a natural mixture of common language and difficult to understand expressions, whilst each containing vastly different domain-specific vocabulary. Systems must submit on all three sub-corpora
 
 In addition to the single word task, we have also annotated multi-word expressions. These form a second track for our shared task. Systems which submit to both the single and multi word tracks will be additionally evaluated on the joint scores on both corpora. 
+
+# Basleines
+
+To aid those participating in the shared task with a reasonable estimation of performance we have released the following baselines combining log word frequency from SUBTLEX and word length. Features were averaged for each token in a MWE. The training set was used for training and the trial set was used for evaluation. Each feature, or combination of features was passed through linear regression. The complexity-averge gives the same 'average complexity' value, learned from the training set to each value in the trial set. We report on the following metrics:
+
+ - Pearson's R (R)
+ - Spearman's Rho (Rho)
+ - Mean Absolute Error (MAE)
+ - Mean Squared Error (MSE)
+ - R-squared (R2)
+ 
+ ### Task 1 - Single Words
+
+| Features                   |R|Rho|MAE|MSE|R2|
+| -------------              |:---:| :---:| :---:| :---:| :---:|
+| Complexity-average         |  - |	 - |	 0.1049 |	 0.0189 |	 0.0007 |
+| Length                     |  0.1589 |	 0.2196 |	 0.1035 |	 0.0185 |	 0.0207 |
+| Log Frequency              |  0.5287 |	 *0.5263* |	 0.0870 |	 0.0136 |	 0.2779 |
+| Log Frequency and Length   |  *0.5376* |	 0.5251 |	 *0.0867* |	 *0.0135* |	 *0.2864* |
+
+### Task 2 - Single Words + MWEs
+
+| Features                   |R|Rho|MAE|MSE|R2|
+| -------------              |:---:| :---:| :---:| :---:| :---:|
+| Complexity-average         |  - |	 - |	 0.1164 |	 0.0219 |	 0.0000 |
+| Length                     |  0.3931 |	 0.3642 |	 0.1054 |	 0.0186 |	 0.1513 |
+| Log Frequency              |  0.4840 |	 0.5093 |	 0.0992 |	 0.0169 |	 0.2321 |
+| Log Frequency and Length   |  *0.6249* |	 *0.6162* |	 *0.0900* |	 *0.0136* |	 *0.3807* |
+
