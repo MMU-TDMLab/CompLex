@@ -29,7 +29,7 @@ The data comes from three sources: biblical text, biomedical articles and procee
 
 In addition to the single word task, we have also annotated multi-word expressions. These form a second track for our shared task. Systems which submit to both the single and multi word tracks will be additionally evaluated on the joint scores on both corpora. 
 
-# Basleines
+# Baselines
 
 To aid those participating in the shared task with a reasonable estimation of performance we have released the following baselines combining log word frequency from SUBTLEX and word length. Features were averaged for each token in a MWE. The training set was used for training and the trial set was used for evaluation. Each feature, or combination of features was passed through linear regression. The complexity-averge gives the same 'average complexity' value, learned from the training set to each value in the trial set. We report on the following metrics:
 
