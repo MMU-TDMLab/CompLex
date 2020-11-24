@@ -45,15 +45,15 @@ To aid those participating in the shared task with a reasonable estimation of pe
 | -------------              |:---:| :---:| :---:| :---:| :---:|
 | Complexity-average         |  - |	 - |	 0.1049 |	 0.0189 |	 0.0007 |
 | Length                     |  0.1589 |	 0.2196 |	 0.1035 |	 0.0185 |	 0.0207 |
-| Log Frequency              |  0.5287 |	 *0.5263* |	 0.0870 |	 0.0136 |	 0.2779 |
-| Log Frequency and Length   |  *0.5376* |	 0.5251 |	 *0.0867* |	 *0.0135* |	 *0.2864* |
+| Log Frequency              |  0.5287 |	 **0.5263** |	 0.0870 |	 0.0136 |	 0.2779 |
+| Log Frequency and Length   |  **0.5376** |	 0.5251 |	 **0.0867** |	 **0.0135** |	 **0.2864** |
 
-### Task 2 - Single Words + MWEs
+### Task 2 - MWEs
 
 | Features                   |R|Rho|MAE|MSE|R2|
 | -------------              |:---:| :---:| :---:| :---:| :---:|
-| Complexity-average         |  - |	 - |	 0.1164 |	 0.0219 |	 0.0000 |
-| Length                     |  0.3931 |	 0.3642 |	 0.1054 |	 0.0186 |	 0.1513 |
-| Log Frequency              |  0.4840 |	 0.5093 |	 0.0992 |	 0.0169 |	 0.2321 |
-| Log Frequency and Length   |  *0.6249* |	 *0.6162* |	 *0.0900* |	 *0.0136* |	 *0.3807* |
+| Complexity-average         | -       |	 -     |	 0.1228 |  0.0234	|  0.0000 |
+| Length                     | 0.4822 	| 0.4642 |	 0.1104 |	 0.0185 |	 0.2083 |
+| Log Frequency              | 0.6571 	| 0.6345 |	 0.0924 |	 0.0140 |	 0.4030 |
+| Log Frequency and Length   | **0.6969** 	| **0.6713** |	 **0.0908** |	 **0.0129** |	 **0.4485** |
 
