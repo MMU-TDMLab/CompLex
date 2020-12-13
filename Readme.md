@@ -25,7 +25,7 @@ The data is arranged by token and sorted by complexity (i.e., instances with the
 
 When *table* is used as a noun  in the first sentence (albeit in an abstract sense) it receives a score of 0.01 indicating it is very easily understood. However, when it is used as a verb in the second, it is scored at 0.23, indicating a more difficult word to comprehend.
 
-The data comes from three sources: biblical text, biomedical articles and proceedings of the European Parliament. These sources were selected as they contain a natural mixture of common language and difficult to understand expressions, whilst each containing vastly different domain-specific vocabulary. Systems must submit on all three sub-corpora
+The data comes from three sources: biblical text, biomedical articles and proceedings of the European Parliament. These sources were selected as they contain a natural mixture of common language and difficult to understand expressions, whilst each containing vastly different domain-specific vocabulary. Systems must submit on all three sub-corpora.
 
 In addition to the single word task, we have also annotated multi-word expressions. These form a second track for our shared task. Systems which submit to both the single and multi word tracks will be additionally evaluated on the joint scores on both corpora. 
 
