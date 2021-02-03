@@ -4,6 +4,8 @@ This site holds the data associated with the paper: CompLex — A New Corpus for
 
 available at: https://www.aclweb.org/anthology/2020.readi-1.9/
 
+This data is released under CC-BY: https://creativecommons.org/licenses/by/4.0/
+
 We ran a shared task on Lexical Complexity Prediction via SemEval using this data. The data was released according to the following schedule:
 
  - Trial data available: July 31, 2020
