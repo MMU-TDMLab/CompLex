@@ -18,6 +18,8 @@ See the task website for further information: https://sites.google.com/view/lcps
 
 See the CodaLab site to view submissions: https://competitions.codalab.org/competitions/27420
 
+The script evaluate.py is the same evaluation script that was used as part of the shared task. You can run this by calling "python evaluate.py <results_path>/res/ <reference_path>/ref/" where res and ref are directories containing the system's results and the reference labels respectively.
+
 The trial, training and test data are available. The trial data comprises of 99 MWEs (29 bible, 33 biomed and 37 europarl) and 421 single word instances (143 bible, 135 biomed and 143 europarl). 
 
 The training data comprises of 1,517 MWEs (505 bible, 514 biomed and 498 europarl) and 7,662 single word instances (2,574 bible, 2,576 biomed and 2,512 europarl).
