@@ -1,0 +1,49 @@
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<!-- For the full list of available Crowd HTML Elements and their input/output documentation,
+      please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
+
+<!-- You must include crowd-form so that your task submits answers to MTurk -->
+<crowd-form answer-format="flatten-objects">
+
+    <!-- The crowd-classifier element will create a tool for the Worker to select the
+           correct answer to your question -->
+    <crowd-classifier 
+      name="sentiment"
+      categories="['Very Easy', 'Easy', 'Neutral', 'Difficult', 'Very Difficult']"
+      header="How Difficult is the given word in the sentence?"
+    >
+
+      <classification-target>
+        <!-- The text you want classified will be substituted for the "text" variable when you 
+               publish a batch with a CSV input file containing multiple text items  -->
+        Identify the following word in the sentence below:
+        <strong>${token}</strong>
+        <br/><br/>
+        ${sentence}
+      </classification-target>
+
+     <!-- Use the short-instructions section for quick instructions that the Worker
+            will see while working on the task. Including some basic examples of 
+            good and bad answers here can help get good results. You can include 
+            any HTML here. -->
+      <short-instructions>
+       <p>You <strong>must</strong> read the full instructions before beginning.</p> <p>Read the sentence.</p><p>Choose the appropriate difficulty level for the given word. </p><p>Do not click randomly. </p><p>Do not assign all HITs to the same level.</p>
+      </short-instructions>
+
+      <!-- Use the full-instructions section for more detailed instructions that the 
+            Worker can open while working on the task. Including more detailed 
+            instructions and additional examples of good and bad answers here can
+            help get good results. You can include any HTML here. -->
+      <full-instructions header="Complexity Assessment Instructions">
+        <p><strong>Very Difficult</strong> Words that you have never seen before, or are very unclear</p>
+        <p><strong>Difficult</strong> Words which you are unclear of the meaning, but may be able to infer from the sentence</p>
+        <p><strong>Neutral</strong>: When the word is neither difficult or easy</p>
+        <p><strong>Easy</strong>: Words which you are comfortable with the meaning of</p>
+        <p><strong>Very Easy</strong>: Words which are very familiar to you</p>
+        <p>You should use your own judgment to assess how difficult each word is.</p><p> We will reject all assignments if (a) only one level is used in all or almost all submissions, (b) we detect that the answers have been assigned randomly.</p>
+      </full-instructions>
+
+    </crowd-classifier>
+</crowd-form> 
